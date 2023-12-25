@@ -21,7 +21,7 @@ const Footer = () => {
   `;
   return (
     <View style={styles.footerContainer}>
-  
+      <SvgXml xml={home} width={30} height={30} />
       <SvgXml xml={remains} width={250} height={50} />
     </View>
   );
