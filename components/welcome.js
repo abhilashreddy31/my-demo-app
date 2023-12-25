@@ -33,7 +33,7 @@ const Welcome = () => {
             <Image
               source={require("../assets/w1.jpeg")}
               style={{
-                height: 300,
+                height: 250,
                 width: 300,
                 borderRadius: 30,
                 marginLeft: -85,
@@ -50,7 +50,7 @@ const Welcome = () => {
             <Image
               source={require("../assets/w2.jpeg")}
               style={{
-                height: 300,
+                height: 250,
                 width: 300,
                 borderRadius: 30,
                 marginLeft: 1,
@@ -69,7 +69,7 @@ const Welcome = () => {
             <Image
               source={require("../assets/w3.jpg")}
               style={{
-                height: 300,
+                height: 250,
                 width: 300,
                 borderRadius: 30,
                 marginLeft: -120,
@@ -86,7 +86,7 @@ const Welcome = () => {
             <Image
               source={require("../assets/w4.jpg")}
               style={{
-                height: 300,
+                height: 250,
                 width: 300,
                 borderRadius: 30,
                 marginLeft: 1,
@@ -109,7 +109,7 @@ const Welcome = () => {
               color: "black",
               fontSize: 35,
               fontWeight: "bold",
-              top:6
+              top: 6
             }}
           >
             Gharr<Text style={{ color: "#308DFF" }}>For</Text>.Sale
@@ -123,7 +123,7 @@ const Welcome = () => {
             style={styles.button}
             onPress={handleGetStarted}
           >
-            <Text style={[{ color: "white" }, { fontSize: 20 },{fontWeight:"700"}]}>
+            <Text style={[{ color: "white" }, { fontSize: 20 }, { fontWeight: "700" }]}>
               Get Started
             </Text>
           </TouchableOpacity>
@@ -150,6 +150,6 @@ const styles = StyleSheet.create({
     marginTop: 40,
     alignItems: "flex-end",
     justifyContent: "center",
-    left:-7
+    left: -7
   },
 });

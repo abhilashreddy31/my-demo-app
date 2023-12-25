@@ -9,11 +9,11 @@ import {
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ListingBox from "../components/ListingBox";
-import { useNavigation } from "@react-navigation/native"; 
+import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
   const [selectedSection, setSelectedSection] = useState("Recommended");
-const navigation = useNavigation();
+  const navigation = useNavigation();
   const handleSectionClick = (section) => {
     setSelectedSection(section);
   };
@@ -43,7 +43,7 @@ const navigation = useNavigation();
                 styles.sectionText,
                 {
                   color:
-                    selectedSection === "Top Rates" ? "#308DFF" : "#308DFF",
+                    selectedSection === "Top Rates" ? "#308DFF" : "#000000",
                 },
               ]}
             >
@@ -130,6 +130,8 @@ const navigation = useNavigation();
               title="Lorem House "
               price="$340/month"
               location="Avenue, West Side"
+              imageStyle={styles.imageStyle}
+              style={styles.listingBox}
             />
           </TouchableOpacity>
           <ListingBox
@@ -153,6 +155,7 @@ const navigation = useNavigation();
             title="Lorem House "
             price="$400/month"
             location="Street, East Side"
+
           />
         </View>
       </View>
@@ -201,18 +204,29 @@ const styles = StyleSheet.create({
   },
   listingBoxContainer: {
     flexDirection: "row",
-    justifyContent: "space-around",
-    marginBottom: 15,
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 10,
+  },
+  listingBox: {
+    marginHorizontal: 5,
   },
   section: {
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 25,
     marginLeft: 10,
+   
   },
   sectionText: {
     fontSize: 16,
     fontWeight: "bold",
+  },
+
+  imageStyle: {
+    width: 150, 
+    height: 100,
+    borderRadius: 8, 
   },
 });
 

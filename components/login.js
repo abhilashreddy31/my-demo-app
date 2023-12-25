@@ -89,14 +89,14 @@ const Login = () => {
         </Text>
       </View>
       <View style={styles.formContainer}>
-        <Text style={styles.label}>Sign In</Text>
+        <Text style={styles.label1}>Sign In</Text>
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Username</Text>
           <View style={styles.inputBox}>
             <SvgXml xml={user} />
             <TextInput
               style={styles.input}
-              placeholder="Enter your username"
+              placeholder="Username"
               placeholderTextColor="#a0a0a0"
             />
           </View>
@@ -107,7 +107,7 @@ const Login = () => {
             <SvgXml xml={password} />
             <TextInput
               style={styles.input}
-              placeholder="Enter your password"
+              placeholder="•••••••••"
               placeholderTextColor="#a0a0a0"
               secureTextEntry={true}
             />
@@ -155,10 +155,19 @@ const styles = StyleSheet.create({
   inputContainer: {
     marginBottom: 20,
   },
+  label1:{
+      color: "#091130",
+      fontFamily: "Poppins",
+      fontSize: 18,
+      fontWeight: "800",
+      fontStyle: "normal",
+      lineHeight: 22,
+  },
   label: {
     fontSize: 16,
     fontWeight: "600",
     marginBottom: 20,
+    paddingTop:20,
   },
   inputBox: {
     flexDirection: "row",
